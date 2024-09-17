@@ -1,0 +1,20 @@
+<RCC>
+  <qresource>
+    <file>resources/icons/grey_view.png</file>
+    <file>resources/icons/grey_split.png</file>
+    <file>resources/icons/grey_search.png</file>
+    <file>resources/icons/grey_right_align.png</file>
+    <file>resources/icons/grey_left_align.png</file>
+    <file>resources/icons/grey_center_align.png</file>
+    <file>resources/icons/grey_zpl.png</file>
+    <file>resources/icons/grey_label.png</file>
+    <file>resources/icons/grey_open_file.png</file>
+    <file>resources/icons/grey_print.png</file>
+    <file>resources/icons/grey_quantity.png</file>
+    <file>resources/icons/grey_save_file.png</file>
+    <file>resources/icons/grey_refresh.png</file>
+    <file>resources/icons/white_save_pdf.png</file>
+    <file>resources/icons/grey_save_pdf.png</file>
+    <file>resources/icons/grey_settings.png</file>
+  </qresource>
+</RCC>

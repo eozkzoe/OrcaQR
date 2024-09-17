@@ -1,0 +1,12 @@
+fpdf2
+openpyxl
+Pillow
+PySide6
+PySide6_Addons
+PySide6_Essentials
+segno
+zebra
+zpl
+python-barcode
+pyqtdarktheme
+xlrd

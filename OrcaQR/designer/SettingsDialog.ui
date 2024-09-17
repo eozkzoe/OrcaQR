@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsDialog</class>
+ <widget class="QDialog" name="SettingsDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>558</width>
+    <height>778</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Plain</enum>
+     </property>
+     <property name="lineWidth">
+      <number>0</number>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>-172</y>
+        <width>519</width>
+        <height>883</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <layout class="QGridLayout" name="gridLayout_4" rowstretch="0,0">
+         <item row="1" column="0">
+          <widget class="QGroupBox" name="label_settings_group">
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>Label settings</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="1" column="0">
+             <widget class="QLabel" name="units_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Units</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="units_combobox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="resolution_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Label Resolution (DPI)</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="resolution_combobox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="currentText">
+               <string/>
+              </property>
+              <property name="sizeAdjustPolicy">
+               <enum>QComboBox::AdjustToContents</enum>
+              </property>
+              <property name="minimumContentsLength">
+               <number>5</number>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="size_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Label Size</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <layout class="QHBoxLayout" name="label_size_layout">
+              <item>
+               <widget class="QComboBox" name="size_combobox">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="sizeAdjustPolicy">
+                 <enum>QComboBox::AdjustToContents</enum>
+                </property>
+                <property name="minimumContentsLength">
+                 <number>8</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLabel" name="wxh_label">
+                <property name="font">
+                 <font>
+                  <family>Helvetica Neue</family>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>(Width x Height)</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_data_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Label Data</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QListWidget" name="label_data_list">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="editTriggers">
+               <set>QAbstractItemView::NoEditTriggers</set>
+              </property>
+              <property name="dragEnabled">
+               <bool>true</bool>
+              </property>
+              <property name="dragDropMode">
+               <enum>QAbstractItemView::InternalMove</enum>
+              </property>
+              <property name="defaultDropAction">
+               <enum>Qt::MoveAction</enum>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="0">
+             <widget class="QLabel" name="label_rows_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Label Rows</string>
+              </property>
+             </widget>
+            </item>
+            <item row="7" column="1">
+             <widget class="QGroupBox" name="label_rows_groupbox">
+              <property name="title">
+               <string/>
+              </property>
+              <property name="flat">
+               <bool>false</bool>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_3">
+               <property name="leftMargin">
+                <number>10</number>
+               </property>
+               <property name="topMargin">
+                <number>10</number>
+               </property>
+               <property name="rightMargin">
+                <number>10</number>
+               </property>
+               <property name="bottomMargin">
+                <number>10</number>
+               </property>
+               <item>
+                <layout class="QVBoxLayout" name="label_rows_v_layout"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="8" column="0">
+             <widget class="QLabel" name="qr_data_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>QR Data</string>
+              </property>
+             </widget>
+            </item>
+            <item row="8" column="1">
+             <widget class="QListWidget" name="qr_data_list">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="0">
+             <widget class="QLabel" name="permitted_characters_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Permitted characters</string>
+              </property>
+             </widget>
+            </item>
+            <item row="10" column="1">
+             <widget class="QListWidget" name="permitted_characters_list">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="5" column="1">
+             <layout class="QHBoxLayout" name="layout_options_layout">
+              <property name="spacing">
+               <number>10</number>
+              </property>
+              <item alignment="Qt::AlignVCenter">
+               <widget class="QCheckBox" name="show_titles_checkbox">
+                <property name="font">
+                 <font>
+                  <family>Helvetica Neue</family>
+                  <bold>false</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Show Titles</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="alignment_groupbox">
+                <property name="title">
+                 <string/>
+                </property>
+                <layout class="QHBoxLayout" name="alignment_layout">
+                 <property name="spacing">
+                  <number>10</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QRadioButton" name="left_align_button">
+                   <property name="font">
+                    <font>
+                     <family>Helvetica Neue</family>
+                     <bold>false</bold>
+                     <kerning>true</kerning>
+                    </font>
+                   </property>
+                   <property name="mouseTracking">
+                    <bool>true</bool>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset theme="document-properties">
+                     <normalon>:/resources/icons/grey_left_align.png</normalon>
+                    </iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                   <property name="checked">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="center_align_button">
+                   <property name="font">
+                    <font>
+                     <family>Helvetica Neue</family>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="mouseTracking">
+                    <bool>true</bool>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset theme="document-properties">
+                     <normalon>:/resources/icons/grey_center_align.png</normalon>
+                    </iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QRadioButton" name="right_align_button">
+                   <property name="font">
+                    <font>
+                     <family>Helvetica Neue</family>
+                     <bold>false</bold>
+                    </font>
+                   </property>
+                   <property name="mouseTracking">
+                    <bool>true</bool>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                   <property name="icon">
+                    <iconset theme="document-properties">
+                     <normalon>:/resources/icons/grey_right_align.png</normalon>
+                    </iconset>
+                   </property>
+                   <property name="checkable">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="5" column="0">
+             <widget class="QLabel" name="show_titles_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Layout Options</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QGroupBox" name="general_settings_group">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>250</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Helvetica Neue</family>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="title">
+            <string>General</string>
+           </property>
+           <layout class="QFormLayout" name="formLayout_2">
+            <item row="0" column="0">
+             <widget class="QLabel" name="dark_mode_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Dark mode</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QCheckBox" name="dark_mode_checkbox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="checked">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="language_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Language</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="language_combobox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="working_dir_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Working Directory</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QLineEdit" name="working_dir_edit">
+                <property name="font">
+                 <font>
+                  <family>Helvetica Neue</family>
+                  <bold>true</bold>
+                 </font>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="search_dir_button">
+                <property name="font">
+                 <font>
+                  <family>Helvetica Neue</family>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Choose Folder</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="show_columns_label">
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Show Columns</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QListWidget" name="show_columns_list">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>100</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <family>Helvetica Neue</family>
+                <bold>true</bold>
+               </font>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item>
+    <widget class="QDialogButtonBox" name="save_settings_box">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="copyright_label">
+     <property name="text">
+      <string>© 2023 Fling Asia </string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>save_settings_box</sender>
+   <signal>accepted()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>save_settings_box</sender>
+   <signal>rejected()</signal>
+   <receiver>SettingsDialog</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
