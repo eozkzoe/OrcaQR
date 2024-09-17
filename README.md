@@ -1,4 +1,4 @@
-# OrcaQR Alpha v0.6.5
+# OrcaQR Alpha v0.1.0
 ## Labelling software, features include:
 - Loading excel files
 - Advanced search
